@@ -1,15 +1,19 @@
 #!/bin/bash
+. nm.config
 
-case "$1" in:
+case $1 in:
     -h|--help)
-        echo "$NM_PACKAGE - Scanner de Rede Wireless"
+        echo " "
+        echo " "
+        echo "$NM_NAME - Scanner de Rede Wireless"
+        echo "$NM_vERSION\v"
         echo " "
         echo "$NM_PACKAGE [opcoes]"
         echo " "
         echo "options:"
         echo "-h, --help                mostra um resumo dos comandos"
         echo "-t, --teste               exibe o texto 'Testei aqui'"
-        exit 0
+        exit 0;;
 
      -t|--teste)
         echo "$NM_PACKAGE - Scanner de Rede Wireless"
@@ -19,4 +23,5 @@ case "$1" in:
         echo "options:"
         echo "-h, --help                mostra um resumo dos comandos"
         echo "-t, --teste               exibe o texto 'Testei aqui'"
-        exit 0
+        exit 0;;
+esac
