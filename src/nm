@@ -1,7 +1,7 @@
 #!/bin/bash
 . nm.config
 
-case $1 in:
+case $1 in
     -h|--help)
         echo " "
         echo " "
